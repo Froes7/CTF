@@ -18,12 +18,12 @@ A página inicial do blog possui um título, uma barra de pesquisa, e 5 notícia
 Não há pistas sobre a *flag* na página inicial, porém, é possível checar **arquivos padrões** que frequentemente expõem **diretórios sensíveis** esquecidos por desenvolvedores, como por exemplo, no [*"Robots.txt"*](https://www.cloudflare.com/pt-br/learning/bots/what-is-robots-txt/) está escrito:
 
 > "Disallow: **/admin.php**"
-
-Nota: também é possível encontrar um comentário no [código-fonte](https://pt.wikipedia.org/wiki/C%C3%B3digo-fonte) da página sobre este mesmo diretório. (*/admin.php*).
+>
+> Nota: também é possível encontrar um comentário no [código-fonte](https://pt.wikipedia.org/wiki/C%C3%B3digo-fonte) da página sobre este mesmo diretório.
 
 O diretório encontrado nos redireciona a um outro diretório chamado de ***"/login.php"***, onde pede um **usuário** e uma **senha**. Provavelmente a *flag* está depois dessa página de *login*, porém, não temos as credenciais para acessá-la. No **código-fonte** dessa página é possível notar uma pista em forma de comentário sobre qual vulnerabilidade podemos utilizar:
 
-> anotação: trocar **sqlite** por **mysql** qdo eu conseguir pagar por um servidor melhor!
+> "anotação: trocar **sqlite** por **mysql** qdo eu conseguir pagar por um servidor melhor!"
 
 ### Vulnerabilidade
 
