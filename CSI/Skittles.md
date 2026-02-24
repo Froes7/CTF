@@ -21,7 +21,7 @@ Não há pistas sobre a *flag* na página inicial, porém, é possível checar *
 
 Nota: também é possível encontrar um comentário no [código-fonte](https://pt.wikipedia.org/wiki/C%C3%B3digo-fonte) da página sobre este mesmo diretório. (*/admin.php*).
 
-O diretório encontrado nos redireciona a um outro diretório chamado de ***"/login.php"***, onde pede um **usuário** e uma **senha**. Provavelmente a *flag* está depois dessa página de *login*, porém, não temos as credenciais para acessá-la. No **código-fonte** dessa página de login é possível notar uma pista em forma de comentário sobre qual vulnerabilidade podemos utilizar:
+O diretório encontrado nos redireciona a um outro diretório chamado de ***"/login.php"***, onde pede um **usuário** e uma **senha**. Provavelmente a *flag* está depois dessa página de *login*, porém, não temos as credenciais para acessá-la. No **código-fonte** dessa página é possível notar uma pista em forma de comentário sobre qual vulnerabilidade podemos utilizar:
 
 > anotação: trocar **sqlite** por **mysql** qdo eu conseguir pagar por um servidor melhor!
 
