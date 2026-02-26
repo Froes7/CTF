@@ -29,7 +29,9 @@ O diretório encontrado nos redireciona a um outro diretório chamado de ***"/lo
 
 Agora que sabemos que o servidor utiliza [***sqlite***](https://codigofacil.com.br/o-que-e-sqlite/), para burlar o *login* e acessar a *flag* podemos utilizar uma **vulnerabilidade** conhecida como [***SQL Injection***](https://www.datacamp.com/pt/tutorial/sql-injection). [**SQL**](https://pt.wikipedia.org/wiki/SQL) é uma linguagem utilizada para gerenciar informações em um **banco de dados**, no caso dessa questão: **usuários e senhas**. Se o código utilizado para validar um *login* não estiver **sanitizado**, ele pode ser explorado com uma [string](https://en.wikipedia.org/wiki/String_(computer_science)) maliciosa, como por exemplo:
 
-> ' OR 1=1 --
+```
+' OR 1=1 --
+```
 
 Funcionalidade:
 
